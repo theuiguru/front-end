@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Sticky Navbar</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+body {margin:0; padding:0; font-family:"Roboto", sans-serif; font-size:16px;}
+.main {width:80%; margin:auto;}
+.top-nav {padding:16px; margin:auto; background:#fff; width:80%; text-align:center; line-height:35px;}
+.top-nav ul {list-style:none; display:inline-block; padding:0; margin:0;}
+.top-nav li {display:inline-block;}
+.top-nav a {color:darkgray; text-decoration:none;}
+  .top-nav a:hover {color:lightgray;}
+  .btn {padding:8px; border-radius:3px; border:none; font-family:inherit; font-size:inherit; cursor:pointer;}
+  .btn-section {background:transparent;}
+  .btn-section:hover {background:#eee;}
+  .btn-user {background:lightgray;}
+  .btn-user:hover {background:darkgray; color:#fff;}
+  .left {float:left;}
+  .right {float:right;}
+  .scrolling {position:fixed; padding:0 10% !important; top:0; z-index:2; border-bottom:1px solid #bbb; box-shadow:2px 0 2px rgba(0,0,0,0.5);}
+</style></head><body>
+  <header><nav class="top-nav scrolling">
+    <div class="left">
+      <button class="btn btn-section"><span class="fa fa-bars"></span> SECTION</button>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="right">
+      <button class="btn btn-user">LOGIN</button>
+      <button class="btn btn-user">SIGN UP</button>
+    </div>
+    </nav></header>
+  <div class="main">
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, praesentium qui excepturi natus alias, dolorem optio! Porro eos incidunt reiciendis a, ex ut iste eaque magni minus exercitationem placeat. Quas minima labore quasi tenetur. Ipsum consequatur cumque esse, fugit similique officia fuga voluptatum culpa hic, obcaecati modi molestiae. Ut, ducimus.</p>
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, praesentium qui excepturi natus alias, dolorem optio! Porro eos incidunt reiciendis a, ex ut iste eaque magni minus exercitationem placeat. Quas minima labore quasi tenetur. Ipsum consequatur cumque esse, fugit similique officia fuga voluptatum culpa hic, obcaecati modi molestiae. Ut, ducimus.</p>
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, praesentium qui excepturi natus alias, dolorem optio! Porro eos incidunt reiciendis a, ex ut iste eaque magni minus exercitationem placeat. Quas minima labore quasi tenetur. Ipsum consequatur cumque esse, fugit similique officia fuga voluptatum culpa hic, obcaecati modi molestiae. Ut, ducimus.</p>
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, praesentium qui excepturi natus alias, dolorem optio! Porro eos incidunt reiciendis a, ex ut iste eaque magni minus exercitationem placeat. Quas minima labore quasi tenetur. Ipsum consequatur cumque esse, fugit similique officia fuga voluptatum culpa hic, obcaecati modi molestiae. Ut, ducimus.</p>
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, praesentium qui excepturi natus alias, dolorem optio! Porro eos incidunt reiciendis a, ex ut iste eaque magni minus exercitationem placeat. Quas minima labore quasi tenetur. Ipsum consequatur cumque esse, fugit similique officia fuga voluptatum culpa hic, obcaecati modi molestiae. Ut, ducimus.</p>
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, praesentium qui excepturi natus alias, dolorem optio! Porro eos incidunt reiciendis a, ex ut iste eaque magni minus exercitationem placeat. Quas minima labore quasi tenetur. Ipsum consequatur cumque esse, fugit similique officia fuga voluptatum culpa hic, obcaecati modi molestiae. Ut, ducimus.</p>
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, praesentium qui excepturi natus alias, dolorem optio! Porro eos incidunt reiciendis a, ex ut iste eaque magni minus exercitationem placeat. Quas minima labore quasi tenetur. Ipsum consequatur cumque esse, fugit similique officia fuga voluptatum culpa hic, obcaecati modi molestiae. Ut, ducimus.</p>
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, praesentium qui excepturi natus alias, dolorem optio! Porro eos incidunt reiciendis a, ex ut iste eaque magni minus exercitationem placeat. Quas minima labore quasi tenetur. Ipsum consequatur cumque esse, fugit similique officia fuga voluptatum culpa hic, obcaecati modi molestiae. Ut, ducimus.</p>
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, praesentium qui excepturi natus alias, dolorem optio! Porro eos incidunt reiciendis a, ex ut iste eaque magni minus exercitationem placeat. Quas minima labore quasi tenetur. Ipsum consequatur cumque esse, fugit similique officia fuga voluptatum culpa hic, obcaecati modi molestiae. Ut, ducimus.</p>
+  </div>
+<script>
+$(function() {
+  setInterval(checkScroll, 200);
+});
+  
+function checkScroll() {
+  var nav = $('.top-nav').first();
+  if($(document).scrollTop() > 0 && !nav.hasClass('scrolling')) {
+    nav.addClass('scrolling');
+  } else if($(document).scrollTop() === 0 && nav.hasClass('scrolling')) {
+    nav.removeClass('scrolling');
+  }
+}
+</script></body></html>
