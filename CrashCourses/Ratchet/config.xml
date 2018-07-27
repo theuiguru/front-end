@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.yourname.appname" versionCode="1" version="1.0.0">
+	<name>My Amazing App</name>
+	<description>This is my amazing pointless app.</description>
+	<author href="http://theuiguru.github.io" email="me@email.com">Chris Thomas</author>
+	<preference name="orientation" value="portrait"/>
+	<prefrence name="fullscreen" value="false"/>
+</widget>
